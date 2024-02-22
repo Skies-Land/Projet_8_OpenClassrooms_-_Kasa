@@ -1,0 +1,69 @@
+.banner {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1.56rem;
+    background: #F6F6F6;
+    height: 223px;
+    max-width: 1240px;
+    margin-bottom: 1.87rem;
+    @media screen and (max-width: 1024px) {
+        height: 200px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 111px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        border-radius: 1.56rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        @media screen and (max-width: 768px) {
+            border-radius: 10px;
+        }
+    }
+
+    h1 {
+        color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        @media screen and (max-width: 1024px) {
+            font-size: 2.35rem;
+        }
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        @media screen and (max-width:375px) {
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 1.5rem;
+        opacity: 0.3;
+        background: #000;
+        mix-blend-mode: darken;
+        @media screen and (max-width: 768px) {
+            border-radius: 10px;
+        }
+    }
+}
