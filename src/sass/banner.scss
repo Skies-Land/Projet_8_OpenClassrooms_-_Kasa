@@ -44,13 +44,15 @@
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             font-size: 2rem;
-            font-weight: 300;
+            font-weight: 500;
         }
-        @media screen and (max-width:375px) {
-            font-size: 1.7rem;
-            font-weight: 300;
+        @media screen and (min-width: 375px) {
+            max-width: 75%;
+            max-height: 50%;
+            font-size: 1.8rem;
+            font-weight: 600;
         }
     }
 
@@ -59,7 +61,7 @@
         height: 100%;
         width: 100%;
         border-radius: 1.5rem;
-        opacity: 0.3;
+        opacity: 0.5;
         background: #000;
         mix-blend-mode: darken;
         @media screen and (max-width: 768px) {

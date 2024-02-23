@@ -7,7 +7,7 @@ function Header() {
 
             <nav className="navbar__links">
                 <a href="#">Accueil</a>
-                <a href="#">A propos</a>
+                <a href="#">À propos</a>
             </nav>
 
         </header>
