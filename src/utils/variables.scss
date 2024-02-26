@@ -9,4 +9,7 @@
     $Mask-banner: #000;
 
     /* Dégradé de couleur sur les vignettes dans la gallerie */
-    $Linear-color: linear-gradient(to top, #863535, #ff6060)
+    $Linear-color: linear-gradient(to top, #863535, #ff6060);
+
+    /* Style de l'ombre du lien actif dans la navbar */
+    $Text-active-link: 0px 0px 5px rgba(137,52,52,0.4);

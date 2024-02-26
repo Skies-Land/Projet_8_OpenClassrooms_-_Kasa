@@ -1,14 +1,23 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
         <header>
-
-            <img src="src\assets\image\logo.svg" alt="Logo de Kasa" />
+            <NavLink to={`/`}>
+                <img src="src\assets\image\logo.svg" alt="Logo de Kasa" />
+            </NavLink>
 
             <nav className="navbar__links">
-                <Link to={`/`}>Accueil</Link>
-                <Link to={`/about`}>À propos</Link>
+
+                <NavLink to={`/`} className={({ isActive, isPending }) => 
+                isPending ? "pending" : isActive ? "active" : ""}>
+                    Accueil
+                </NavLink>
+
+                <NavLink to={`/about`} className={({ isActive, isPending }) => 
+                isPending ? "pending" : isActive ? "active" : ""}>
+                    À propos
+                </NavLink>
             </nav>
 
         </header>

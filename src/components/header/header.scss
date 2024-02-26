@@ -17,6 +17,7 @@ header {
         }
     }
 
+    /* navbar avec "Accueil & À propos" */
     .navbar__links {
         display: flex;
         justify-content: space-between;
@@ -25,7 +26,6 @@ header {
         @media screen and (max-width: 1024px) {
             justify-content: space-around;
         }
-
         a {
             text-decoration: none;
             list-style: none;
@@ -39,6 +39,11 @@ header {
                 font-size: 0.8rem;
                 text-transform: uppercase;
                 margin-left: 1.25rem;
+            }
+            /* Style du lien dans la navbar quand la page est "active" */
+            &.active {
+                color: $Theme-color;
+                text-shadow: $Text-active-link;
             }
         }
         a:hover {

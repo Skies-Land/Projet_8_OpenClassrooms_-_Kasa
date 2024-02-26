@@ -4,7 +4,7 @@ function Logement() {
   return (
     <div className="logement">
 
-      <Link to={`/fiche`}>
+      <Link to={`/fiche-logement`}>
 
         <div className="logement__subtitle">
           Titre de la location
