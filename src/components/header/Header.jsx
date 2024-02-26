@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -6,8 +7,8 @@ function Header() {
             <img src="src\assets\image\logo.svg" alt="Logo de Kasa" />
 
             <nav className="navbar__links">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
+                <Link to={`/`}>Accueil</Link>
+                <Link to={`/about`}>À propos</Link>
             </nav>
 
         </header>
