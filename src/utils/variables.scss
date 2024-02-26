@@ -1,7 +1,12 @@
 /*========== Theme colors ==========*/
     $Theme-color: #ff6060;
     $Background-color: #F6F6F6;
+    $Text-color: white;
+    $Text-color-navbar: black;
     $Footer-color: black;
+
+    /* Couleur du masque sur la bannière */
+    $Mask-banner: #000;
 
     /* Dégradé de couleur sur les vignettes dans la gallerie */
     $Linear-color: linear-gradient(to top, #863535, #ff6060)

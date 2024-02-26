@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 .banner {
     margin: auto;
     width: 100%;
@@ -6,17 +8,17 @@
     justify-content: center;
     position: relative;
     border-radius: 1.56rem;
-    background: #F6F6F6;
-    height: 223px;
+    background: $Background-color;
+    height: 13.9rem;
     max-width: 1240px;
     margin-bottom: 1.87rem;
     @media screen and (max-width: 1024px) {
-        height: 200px;
+        height: 12.5rem;
     }
     @media screen and (max-width: 768px) {
-        height: 111px;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        height: 6.93rem;
+        border-radius: 0.62rem;
+        margin-bottom: 1.25rem;
     }
 
     &__img {
@@ -25,12 +27,12 @@
         width: 100%;
         height: 100%;
         @media screen and (max-width: 768px) {
-            border-radius: 10px;
+            border-radius: 0.62rem;
         }
     }
 
     h1 {
-        color: white;
+        color: $Text-color;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -62,10 +64,10 @@
         width: 100%;
         border-radius: 1.5rem;
         opacity: 0.5;
-        background: #000;
+        background: $Mask-banner;
         mix-blend-mode: darken;
         @media screen and (max-width: 768px) {
-            border-radius: 10px;
+            border-radius: 0.62rem;
         }
     }
 }

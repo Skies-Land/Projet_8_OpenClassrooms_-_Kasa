@@ -1,16 +1,12 @@
-/*=============== IMPORT BASE ===============*/
-    @use "./sass/base";
-
-/*=============== IMPORT UTILS ===============*/
-    @use "./sass/utils/variables.scss";
-
-/*=============== IMPORT LAYOUT ===============*/
-    @use "./sass/header";
-    @use "./sass/footer";
+/*=============== IMPORT BASE - VARIALBES ===============*/
+    @use "./utils/base.scss";
+    @use "./utils/variables.scss";
 
 /*=============== IMPORT COMPONENTS ===============*/
-    @use "./sass/banner";
-    @use "./sass/main_content.scss";
-    @use "./sass/housing_gallery";
+    @use "./components/banner/banner.scss";
+    @use "./components/footer/footer.scss";
+    @use "./components/gallery/gallery.scss";
+    @use "./components/header/header.scss";
 
 /*=============== IMPORT PAGES ===============*/
+    @use "./pages/1_home/main_content.scss";

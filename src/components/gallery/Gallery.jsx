@@ -1,9 +1,9 @@
 
 import Logement from "./Logement.jsx";
 
-function Housing_gallery() {
+function Gallery() {
   return (
-    <div className='housing'>
+    <div className='gallery'>
 
       <Logement />
       <Logement />
@@ -16,4 +16,4 @@ function Housing_gallery() {
   )
 }
 
-export default Housing_gallery
+export default Gallery

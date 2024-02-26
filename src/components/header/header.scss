@@ -1,3 +1,5 @@
+@import '../../utils/variables.scss';
+
 header {
     display: flex;
     margin: 0 auto;
@@ -11,7 +13,7 @@ header {
 
     img {
         @media screen and (max-width: 768px) {
-            width: 120px;
+            width: 7.5rem;
         }
     }
 
@@ -27,7 +29,7 @@ header {
         a {
             text-decoration: none;
             list-style: none;
-            color: black;
+            color: $Text-color-navbar;
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 600;

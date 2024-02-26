@@ -1,9 +1,9 @@
-@import './utils/variables.scss';
+@import '../../utils/variables.scss';
 
 .footer {
     background-color: $Footer-color;
-    color: white;
-    padding: 20px;
+    color: $Text-color;
+    padding: 1.25rem;
     margin: 0 auto;
     max-width: 1440px;
     min-height: 100px;

@@ -1,6 +1,6 @@
-@import './utils/variables.scss';
+@import '../../utils/variables.scss';
 
-.housing {
+.gallery {
     background-color: $Background-color;
     min-height: 50vh;
     border-radius: 1.5rem;
@@ -9,9 +9,9 @@
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
-    @media screen  and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         justify-content: center;
-        background-color: inherit; // suppression de la couleur d'arrière plan
+        background-color: inherit; /* Suppression de la couleur d'arrière-plan */
         padding: 0;
     }
 
@@ -31,9 +31,9 @@
 
     &__subtitle {
         width: 50%;
-        margin-inline-start: 0.5rem; // marge vers la gauche
-        margin-block-end: 0.5rem; // marge vers le bas
-        color: white;
+        margin-inline-start: 0.5rem; /* Marge vers la gauche */
+        margin-block-end: 0.5rem; /* Marge vers le bas */
+        color: $Text-color;
     }
 }
 
