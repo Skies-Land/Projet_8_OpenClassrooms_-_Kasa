@@ -6,7 +6,8 @@
     $Footer-color: black;
 
     /* Couleur du masque sur la bannière */
-    $Mask-banner: #000;
+    $Mask-banner-A: #000; /* Light-mod */
+    $Mask-banner-B: #000000ad; /* Dark-mod */
 
     /* Dégradé de couleur sur les vignettes dans la gallerie */
     $Linear-color: linear-gradient(to top, #863535, #ff6060);

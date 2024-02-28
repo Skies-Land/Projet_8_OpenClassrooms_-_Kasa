@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+/*========== ☀️ LIGHT MOD ☀️ ==========*/
+    @media (prefers-color-scheme: light) {
+        .navbar__links a {
+            color: $Text-color-navbar;
+        }
+        .banner__background {
+            background: $Mask-banner-A;
+        }
+        .gallery {
+            background-color: $Background-color;
+        }
+    }
+
+/*========== 🌙 DARK MOD 🌙 ==========*/
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #373a4a;
+        }
+        .banner__background {
+            background: $Mask-banner-B;
+        }
+        .navbar__links a {
+            color: white;
+        }
+        .gallery  {
+            background-color: #424242;
+        }
+    }

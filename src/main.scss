@@ -1,10 +1,12 @@
-/*=============== IMPORT BASE - VARIALBES ===============*/
+/*=============== IMPORT UTILS ===============*/
     @use "./utils/base.scss";
+    @use "./utils/prefer-colors-scheme.scss";
     @use "./utils/variables.scss";
 
 /*=============== IMPORT COMPONENTS ===============*/
+    @use "./components/Thumb/thumb.scss";
     @use "./components/gallery/gallery.scss";
-    @use "./components/gallery/logement.scss";
+    //@use "./components/gallery/logement.scss";
 
 /*=============== IMPORT LAYOUT ===============*/
     @use "./layout/banner/banner.scss";

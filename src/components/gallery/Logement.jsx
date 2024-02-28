@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom";
 
-function Logement() {
-  return (
-    <div className="logement">
+// function Logement() {
+//   return (
+//     <div className="logement">
 
-      <Link to={`/fiche-logement`}>
+//       <Link to={`/apartment-page`}>
 
-        <div className="logement__subtitle">
-          Titre de la location
-        </div>
+//         {/* <div className="logement__subtitle">
+//           Titre de la location
+//         </div> */}
 
-      </Link>
+//       </Link>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// };
 
-export default Logement
+// export default Logement;

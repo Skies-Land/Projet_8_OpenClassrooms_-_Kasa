@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import HomePage from './pages/1_home/HomePage.jsx';
+import ApartmentPage from './pages/2_Apartment_page/ApartmentPage.jsx';
 import Header from './layout/header/Header.jsx';
 import Footer from './layout/footer/Footer.jsx';
 import Main_content from './layout/main_content/Main_content.jsx';
@@ -27,14 +28,12 @@ const router = createBrowserRouter([
       {
         /* ========== Page : Accueil ========== */
         path: "/",
-        element: <App />
+        element: <HomePage />
       },
       {
         /* ========== Page : Logement ========== */
-        path:"/fiche-logement",
-        element: (
-          <h1>Nos Appartements</h1>
-        )
+        path:"/apartment-page",
+        element: <ApartmentPage />
       },
       {
         /* ========== Page : À propos ========== */
