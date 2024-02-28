@@ -45,9 +45,9 @@ header {
                 color: $Theme-color;
                 text-shadow: $Text-active-link;
             }
-        }
-        a:hover {
-            text-decoration-line: underline;
+            &:hover {
+                text-decoration-line: underline;
+            }
         }
     }
 }

@@ -3,10 +3,13 @@
     @use "./utils/variables.scss";
 
 /*=============== IMPORT COMPONENTS ===============*/
-    @use "./components/banner/banner.scss";
-    @use "./components/footer/footer.scss";
     @use "./components/gallery/gallery.scss";
-    @use "./components/header/header.scss";
+    @use "./components/gallery/logement.scss";
+
+/*=============== IMPORT LAYOUT ===============*/
+    @use "./layout/banner/banner.scss";
+    @use "./layout/footer/footer.scss";
+    @use "./layout/header/header.scss";
+    @use "./layout/main_content/main_content.scss";
 
 /*=============== IMPORT PAGES ===============*/
-    @use "./pages/1_home/main_content.scss";
