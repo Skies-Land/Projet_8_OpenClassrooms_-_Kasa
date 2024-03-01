@@ -18,8 +18,17 @@ Thumb.PropTypes = {
 
 export default Thumb;
 
-/* Le tableau "logements" récupérer en props, boucle dessus pour sortir un "logement."
-Les balises <Link> engloube les actions qui sera effectuer.
-Pour chaque "logement" : 
-- un containeur "thumb" className="thumb" et créer avec en clé l'ID du logement.
-- selon le chemin d'accès, une image est ajouté correspondant à l'ID  avec son titre associé */
+//#region - /* ===== EXPLICATION "Thumb.jsx" ===== */
+  /* Le composant Thumb sert à affiche une liste de logements sous forme de vignettes.
+
+  Le composant prend une seule prop, [abréviation de "propriété"] appelé logements, 
+  qui est un tableau d'objets représentant chaque logement.
+
+  À l'intérieur de la fonction du composant, une méthode map est utilisée pour parcourir chaque logement 
+  et générer une balise <Link> de react-router-dom pour chaque élément du tableau.
+
+  Chaque balise <Link> contient une image du logement avec l'attribut alt défini sur le titre du logement.
+
+  Le composant Thumb définit également le type de prop attendu, logements, en utilisant PropTypes pour 
+  s'assurer qu'il s'agit bien d'un tableau, et l'exporte pour être utilisé ailleurs dans l'application. */
+//#endregion
