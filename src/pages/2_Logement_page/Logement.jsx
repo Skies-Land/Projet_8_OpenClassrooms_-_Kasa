@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import logements from "../../services/logements.json";
 import Carousel from "../../components/carousel/Carousel";
+import Tags from "../../components/tags_Logement/Tags";
+import Rating from "../../components/rating/Rating";
 
 const findLogementid = (id) => {
     return logements.find((logement) => logement.id === id);
@@ -14,23 +16,35 @@ const Logement = () => {
 
             <Carousel slides={logement.pictures} />
 
-            <div className="logement__title">
-                <h1 className="logement__title"> {logement.title} </h1>
-                <h2> {logement.location} </h2>
+            <div className="logement__description">
+
+                <div className="logement__description__top">
+                    <div className="logement__description__top--info">
+                        <h1> {logement.title} </h1>
+                        <h2> {logement.location} </h2>
+                        <div className="logement__description__top--block-tags">
+                            {logement.tags.map((tag, index) => (
+                            <Tags key={index} text={tag} /> ))}
+                        </div>
+                    </div>
+
+                    <div className="logement__description__top--host-block">
+                        <div className="logement__description__top--host-block--host">
+                            <h3> {logement.host.name} </h3>
+                            <img src={logement.host.picture} alt={logement.title} />
+                        </div>
+                        <div className="rating">
+                            <Rating rating={parseInt(logement.rating,10)} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="logement__description--bottom">
+                    <p> {logement.description} </p>
+                    <p> {logement.equipments} </p>
+                </div>
+
             </div>
-
-            <div className="logement__host">
-                <h3> {logement.host.name} </h3>
-                <img src={logement.host.picture} alt={logement.title} />
-                <p> {logement.rating} </p>
-            </div>
-
-            <p> {logement.tags} </p>
-
-            <p> {logement.description} </p>
-
-            <p> {logement.equipments} </p>
-
 
         </div>
     );

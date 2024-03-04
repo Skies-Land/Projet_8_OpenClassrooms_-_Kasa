@@ -1,0 +1,19 @@
+@import '../../utils/variables.scss';
+
+.starActive {
+    // border: 3px solid rgb(221, 0, 255);
+    color: $Theme-color;
+    height: 36px;
+}
+
+.starInactive {
+    // border: 3px solid rgb(221, 0, 255);
+    color: #e3e3e3;
+    height: 36px;
+}
+
+.starActive, .starInactive {
+    @media screen and (max-width: 768px) {
+        height: 18px;
+    }
+}

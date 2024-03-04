@@ -12,8 +12,10 @@ function Gallery() {
 export default Gallery;
 
 //#region - /* ===== EXPLICATION "Gallery.jsx" ===== */
-  /* Le composant Gallery sert simplement à rendre une galerie en incluant le composant Thumb.
+/*
+  Le composant Gallery sert simplement à rendre une galerie en incluant le composant Thumb.
 
   Le composant Thumb est utilisé avec une prop logements à laquelle est assignée 
-  la valeur Logements, qui est le contenu du fichier JSON. */
+  la valeur Logements, qui est le contenu du fichier JSON. 
+*/
 //#endregion

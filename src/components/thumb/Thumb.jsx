@@ -19,7 +19,8 @@ Thumb.propTypes = {
 export default Thumb;
 
 //#region - /* ===== EXPLICATION "Thumb.jsx" ===== */
-  /* Le composant Thumb sert à affiche une liste de logements sous forme de vignettes.
+/* 
+  Le composant Thumb sert à affiche une liste de logements sous forme de vignettes.
 
   Le composant prend une seule prop, [abréviation de "propriété"] appelé logements, 
   qui est un tableau d'objets représentant chaque logement.
@@ -30,5 +31,6 @@ export default Thumb;
   Chaque balise <Link> contient une image du logement avec l'attribut alt défini sur le titre du logement.
 
   Le composant Thumb définit également le type de prop attendu, logements, en utilisant PropTypes pour 
-  s'assurer qu'il s'agit bien d'un tableau, et l'exporte pour être utilisé ailleurs dans l'application. */
+  s'assurer qu'il s'agit bien d'un tableau, et l'exporte pour être utilisé ailleurs dans l'application. 
+*/
 //#endregion

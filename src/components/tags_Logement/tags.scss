@@ -1,0 +1,15 @@
+@import '../../utils/variables.scss';
+
+.tags {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+    background: $Theme-color;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 14px;
+}

@@ -13,7 +13,6 @@ function HomePage() {
 
 export default HomePage;
 
-
 //#region - /* ===== EXPLICATION "HomePage.jsx" ===== */
 /* 
   Le composant HomePage rend une bannière en haut de la page et une galerie de logements. 

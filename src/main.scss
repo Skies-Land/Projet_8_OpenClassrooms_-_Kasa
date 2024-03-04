@@ -5,8 +5,10 @@
 
 /*=============== IMPORT COMPONENTS ===============*/
     @use "./components/carousel/carousel.scss";
-    @use "./components/Thumb/thumb.scss";
     @use "./components/gallery/gallery.scss";
+    @use "./components/rating/rating.scss";
+    @use "./components/tags_Logement/tags.scss";
+    @use "./components/Thumb/thumb.scss";
 
 /*=============== IMPORT LAYOUT ===============*/
     @use "./layout/banner/banner.scss";

@@ -11,6 +11,9 @@
         .gallery {
             background-color: $Background-color;
         }
+        .logement__carousel--slider {
+            box-shadow: $Shadow-carousel;
+        }
     }
 
 /*========== 🌙 DARK MOD 🌙 ==========*/
@@ -26,5 +29,11 @@
         }
         .gallery  {
             background-color: #424242;
+        }
+        .logement__carousel--slider {
+            box-shadow: $Glow-carousel;
+        }
+        .logement__description__top--info h2 {
+            color: white;
         }
     }
