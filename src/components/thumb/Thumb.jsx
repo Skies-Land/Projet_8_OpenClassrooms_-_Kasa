@@ -12,8 +12,8 @@ const Thumb = ({logements}) => {
   );
 };
 
-Thumb.PropTypes = {
-    logements: PropTypes.array.isRequired
+Thumb.propTypes = {
+  logements: PropTypes.array.isRequired
 }
 
 export default Thumb;

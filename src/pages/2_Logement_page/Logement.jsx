@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import logements from "../../services/logements.json";
+import Carousel from "../../components/carousel/Carousel";
 
 const findLogementid = (id) => {
     return logements.find((logement) => logement.id === id);
@@ -8,30 +9,28 @@ const findLogementid = (id) => {
 const Logement = () => {
     const{id} = useParams();
     const logement = findLogementid(id);
-    const pictures = logement.pictures;
     return (
         <div className="logement">
-            {/* {pictures.map((picture, index) => {
-                return (
-                    <img src={picture} alt={picture.title} key={`${picture}-${index}`} />
-                );
-            })} */}
-            <h1 className="logement__title"> {logement.title} </h1>
 
-            <div className="logement__info-left">
+            <Carousel slides={logement.pictures} />
+
+            <div className="logement__title">
+                <h1 className="logement__title"> {logement.title} </h1>
                 <h2> {logement.location} </h2>
-                <p> {logement.tags} </p>
-                <p> {logement.description} </p>
             </div>
 
-            <div className="logement__info-right">
-                <div className="logement__host">
-                    <h3> {logement.host.name} </h3>
-                    <img src={logement.host.picture} alt={logement.title} />
-                </div>
+            <div className="logement__host">
+                <h3> {logement.host.name} </h3>
+                <img src={logement.host.picture} alt={logement.title} />
                 <p> {logement.rating} </p>
-                <p> {logement.equipments} </p>
             </div>
+
+            <p> {logement.tags} </p>
+
+            <p> {logement.description} </p>
+
+            <p> {logement.equipments} </p>
+
 
         </div>
     );
@@ -48,6 +47,8 @@ export default Logement;
 */
 //#endregion
 
+/* ---------------------------------------------------- */
+
 //#region - /* ===== ▶️ useParams depuis react-router-dom ===== */
 /* 
     C'est un hook qui permet d'extraire les paramètres de l'URL de la route actuelle. 
@@ -59,11 +60,15 @@ export default Logement;
 */
 //#endregion
 
+/* ---------------------------------------------------- */
+
 //#region - /* ===== ▶️ logements.json ===== */
 /*
     C'est la source de données contenant des informations sur les logements sous forme de tableau. 
 */
 //#endregion
+
+/* ---------------------------------------------------- */
 
 //#region - /* ===== ▶️ const findLogementid ===== */
 /* 
@@ -72,6 +77,8 @@ export default Logement;
     correspondant à cet ID. 
 */
 //#endregion
+
+/* ---------------------------------------------------- */
 
 //#region - /* ===== ▶️ const Logement ===== */
 /* 

@@ -4,9 +4,9 @@
     @use "./utils/variables.scss";
 
 /*=============== IMPORT COMPONENTS ===============*/
+    @use "./components/carousel/carousel.scss";
     @use "./components/Thumb/thumb.scss";
     @use "./components/gallery/gallery.scss";
-    //@use "./components/gallery/logement.scss";
 
 /*=============== IMPORT LAYOUT ===============*/
     @use "./layout/banner/banner.scss";
