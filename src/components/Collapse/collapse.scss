@@ -1,0 +1,78 @@
+@import '../../utils/variables.scss';
+
+.collapse {
+    // border: 3px solid #e5ff00;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-width: 1240px;
+    width: 85%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    .headCollapse {
+        // border: 3px solid rgb(0, 255, 153);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $Theme-color;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        height: 52px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+            height: 30px;
+        }
+        h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+            margin-left: 10px;
+        }
+        .arrow {
+            margin-right: 10px;
+            transition: transform 0.4s ease;
+            height: 24px;
+            width: 24px;
+            @media screen and (max-width: 768px) {
+                height: 18px;
+                width: 18px;
+            }
+            &.down {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .paragraph {
+        // border: 3px solid #e5ff00;
+        background-color: #f6f6f6;
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ff6060;
+        transform: translateY(-50px);
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        transition: all 0.6s ease-in-out;
+        padding: 10px;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+        &.animate {
+            opacity: 1;
+            transform: translateY(0px);
+            height: max-content;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import Main_content from './layout/main_content/Main_content.jsx';
 import './main.scss';
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Logement from './pages/2_Logement_page/Logement.jsx';
+import About from './pages/4_about/About.jsx';
 
 const LayoutHeaderFooter = () => {
   return (
@@ -38,9 +39,7 @@ const router = createBrowserRouter([
       {
         /* ========== Page : À propos ========== */
         path:"/about",
-        element: (
-          <h1>À propos</h1>
-        )
+        element: <About />
       }
     ]
   },

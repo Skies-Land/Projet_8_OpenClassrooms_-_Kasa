@@ -11,8 +11,12 @@
         .gallery {
             background-color: $Background-color;
         }
-        .logement__carousel--slider {
+        .banner, .gallery, .logement__carousel--slider, .tags,
+        .logement__description__top--host-block--host img {
             box-shadow: $Shadow-carousel;
+        }
+        .logement__description__top--info h1 {
+            text-shadow: $Shadow-carousel;
         }
     }
 
@@ -30,8 +34,12 @@
         .gallery  {
             background-color: #424242;
         }
-        .logement__carousel--slider {
+        .banner, .gallery, .logement__carousel--slider, .tags,
+        .logement__description__top--host-block--host img {
             box-shadow: $Glow-carousel;
+        }
+        .logement__description__top--info h1 {
+            text-shadow: $Glow-carousel;
         }
         .logement__description__top--info h2 {
             color: white;

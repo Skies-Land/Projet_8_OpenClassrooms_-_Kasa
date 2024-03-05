@@ -1,0 +1,12 @@
+.about {
+    gap: 10px;
+    padding-inline: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    .collapse {
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        gap: 0;
+    }
+}

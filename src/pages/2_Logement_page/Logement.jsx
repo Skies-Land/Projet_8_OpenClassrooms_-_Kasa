@@ -3,6 +3,7 @@ import logements from "../../services/logements.json";
 import Carousel from "../../components/carousel/Carousel";
 import Tags from "../../components/tags_Logement/Tags";
 import Rating from "../../components/rating/Rating";
+import Collapse from "../../components/Collapse/Collapse.jsx";
 
 const findLogementid = (id) => {
     return logements.find((logement) => logement.id === id);
@@ -40,8 +41,14 @@ const Logement = () => {
                 </div>
 
                 <div className="logement__description--bottom">
-                    <p> {logement.description} </p>
-                    <p> {logement.equipments} </p>
+                    <Collapse title="Description">{logement.description}</Collapse>
+                    <Collapse title="Equipement">
+                        <ul>
+                            {logement.equipments.map((equip, index) => (
+                                <li key={index}>{equip}</li>
+                            ))}
+                        </ul>
+                    </Collapse>
                 </div>
 
             </div>
