@@ -1,64 +1,70 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Carousel from "../../components/carousel/Carousel.jsx";
 import Tags from "../../components/tags/Tags.jsx";
 import Rating from "../../components/rating/Rating.jsx";
 import Collapse from "../../components/collapse/Collapse.jsx";
 
-function Logement() {
-const { logementId } = useParams();
-const [logement, setLogement] = useState(null);
+function LogementPage() {
+  const location = useLocation();
+  // console.log("location:", location);
+  // console.log("L'id du logement est :", location.state.logementById);
 
-  useEffect(() => {
-    async function fetchLogement() {
-      const data = await getLogementById(logementId);
-      setLogement(data);
-    }
-    fetchLogement();
-  }, [logementId]);
+  const [selectedById, setSelectedById] = useState(null);
+  useEffect(fetchLogementData, []);
 
-  if (!logement) return <div>Loading...</div>;
+  function fetchLogementData() {
+    fetch("logements.json")
+      .then((res) => res.json())
+      .then((logs) => {
+        const selectionLogement = logs.find((log) => log.id === location.state.logementById);
+        // console.log("selectedById:", selectedById);
+        setSelectedById(selectionLogement);
+      })
+      .catch(console.error);
+  }
+  if (selectedById == null) return <div>...Loading</div>
 
   return (
     <div className="logement">
-      <Carousel slides={logement.pictures} />
+        <Carousel slides={selectedById.pictures} />
 
-      <div className="logement__description">
+        <div className="logement__description">
         <div className="logement__description__top">
-          <div className="logement__description__top--info">
-            <h1> {logement.title} </h1>
-            <h2> {logement.location} </h2>
-            <div className="logement__description__top--block-tags">
-              {logement.tags.map((tag, index) => (
-                <Tags key={index} text={tag} />
-              ))}
+            <div className="logement__description__top--info">
+                <h1> {selectedById.title} </h1>
+                <h2> {selectedById.location} </h2>
+                <div className="logement__description__top--block-tags">
+                    {selectedById.tags.map((tag, index) => (
+                    <Tags key={index} text={tag} />
+                    ))}
+                </div>
             </div>
-          </div>
 
-          <div className="logement__description__top--host-block">
-            <div className="logement__description__top--host-block--host">
-              <h3> {logement.host.name} </h3>
-              <img src={logement.host.picture} alt={logement.title} />
+            <div className="logement__description__top--host-block">
+                <div className="logement__description__top--host-block--host">
+                    <h3> {selectedById.host.name} </h3>
+                    <img src={selectedById.host.picture} alt={selectedById.title} />
+                </div>
+                <div className="rating">
+                <Rating rating={parseInt(selectedById.rating, 10)} />
+                </div>
             </div>
-            <div className="rating">
-              <Rating rating={parseInt(logement.rating, 10)} />
-            </div>
-          </div>
         </div>
 
         <div className="logement__description--bottom">
-          <Collapse title="Description">{logement.description}</Collapse>
-          <Collapse title="Equipement">
-            <ul>
-              {logement.equipments.map((equip, index) => (
-                <li key={index}>{equip}</li>
-              ))}
-            </ul>
-          </Collapse>
+            <Collapse title="Description">{selectedById.description}</Collapse>
+            <Collapse title="Equipement">
+                <ul>
+                    {selectedById.equipments.map((equip, index) => (
+                        <li key={index}>{equip}</li>
+                    ))}
+                </ul>
+            </Collapse>
         </div>
-      </div>
     </div>
-  );
+</div>
+  )
 } 
 
-export default Logement;
+export default LogementPage;

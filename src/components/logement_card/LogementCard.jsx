@@ -5,7 +5,12 @@ function LogementCard(props) {
   // console.log("props dans logement card", props)
 
   return (
-    <Link to="/logement" className="logementCard">
+    <Link 
+      to="/logement" 
+      state={{
+        logementById: props.id
+      }} 
+      className="logementCard">
 
       <img src={props.imageUrl} alt={props.title} />
       <h3>{props.title}</h3>

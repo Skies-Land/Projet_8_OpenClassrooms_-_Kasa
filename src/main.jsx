@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         /* ========== Page : Logement ========== */
-        path: "/logement/:id",
+        path: "/logement",
         element: <LogementPage />,
       },
       {

@@ -19,7 +19,7 @@ function LogementGallery() {
   return (
     <div className="logement-gallery">
       {logements.map((logement) => (
-        <LogementCard title={logement.title} imageUrl={logement.cover} />
+        <LogementCard title={logement.title} imageUrl={logement.cover} id={logement.id} />
       ))}
     </div>
   );
