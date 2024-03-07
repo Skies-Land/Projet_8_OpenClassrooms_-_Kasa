@@ -40,7 +40,7 @@ const Collapse = ({title, description}) => {
 /* 6️⃣ VALIDATION DES PROPRIÉTÉS */
 Collapse.propTypes = {
     title : PropTypes.string.isRequired,
-    description : PropTypes.node.isRequired,
+    description : PropTypes.node,
 };
 
 export default Collapse;

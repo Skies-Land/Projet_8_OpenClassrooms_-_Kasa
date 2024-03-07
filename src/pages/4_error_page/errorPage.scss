@@ -1,0 +1,26 @@
+@import '../../utils/variables.scss';
+
+.error-page {
+    text-align: center;
+    height: 66.8vh;
+    @media screen and (max-width: 768px) {
+        height: 64.1vh;
+    }
+    h1 {
+        color: $Theme-color;
+        font-size: 10rem;
+        margin-bottom: 0.5em;
+        @media screen and (max-width: 768px) {
+            font-size: 7rem;
+        }
+    }
+    h2 {
+        color: $Theme-color;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 5rem;
+        @media screen and (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+}

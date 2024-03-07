@@ -1,15 +1,15 @@
 import BannerHome from "../../layout/banner_home/BannerHome.jsx";
-import Gallery from "../../components/gallery/Gallery.jsx";
-import Logement from "../2_Logement_page/Logement.jsx";
+import Gallery from "../../components/logement_gallery/LogementGallery.jsx";
+import Logement from "../2_Logement_page/LogementPage.jsx";
 
 function HomePage() {
   return (
     <>
       <BannerHome />
-      <Gallery path= "logement/:id" element={<Logement/>} />
+      <Gallery path="logement/:id" element={<Logement />} />
     </>
   );
-};
+}
 
 export default HomePage;
 

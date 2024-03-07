@@ -8,15 +8,23 @@
         .banner__background {
             background: $Mask-banner-A;
         }
-        .gallery {
+        .logement-gallery {
             background-color: $Background-color;
         }
-        .banner, .gallery, .logement__carousel--slider, .tags,
+        .banner, .logement__carousel--slider, .tags,
         .logement__description__top--host-block--host img {
             box-shadow: $Shadow-carousel;
         }
+        .logement-gallery {
+            @media screen and (min-width: 768px) {
+                box-shadow: $Shadow-carousel;
+            }
+        }
         .logement__description__top--info h1 {
             text-shadow: $Shadow-carousel;
+        }
+        .error-page a {
+            color: black;
         }
     }
 
@@ -31,17 +39,23 @@
         .navbar__links a {
             color: white;
         }
-        .gallery  {
+        .logement-gallery {
             background-color: #424242;
         }
-        .banner, .gallery, .logement__carousel--slider, .tags,
+        .banner, .logement__carousel--slider, .tags,
         .logement__description__top--host-block--host img {
             box-shadow: $Glow-carousel;
+        }
+        .logement-gallery {
+            @media screen and (min-width: 768px) {
+                box-shadow: $Glow-carousel;
+            }
         }
         .logement__description__top--info h1 {
             text-shadow: $Glow-carousel;
         }
-        .logement__description__top--info h2 {
+        .logement__description__top--info h2,
+        .error-page a {
             color: white;
         }
     }

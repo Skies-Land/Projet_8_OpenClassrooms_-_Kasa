@@ -5,11 +5,11 @@
 
 /*=============== IMPORT COMPONENTS ===============*/
     @use "./components/carousel/carousel.scss";
-    @use "./components/Collapse/collapse.scss";
-    @use "./components/gallery/gallery.scss";
+    @use "./components/collapse/collapse.scss";
+    @use "./components/logement_card/logementCard.scss";
+    @use "./components/logement_gallery/logementGallery.scss";
     @use "./components/rating/rating.scss";
-    @use "./components/tags_Logement/tags.scss";
-    @use "./components/Thumb/thumb.scss";
+    @use "./components/tags/tags.scss";
 
 /*=============== IMPORT LAYOUT ===============*/
     @use "./layout/banner_home/bannerhome.scss";
@@ -18,5 +18,6 @@
     @use "./layout/main_content/main_content.scss";
 
 /*=============== IMPORT PAGES ===============*/
-    @use "./pages/2_Logement_page/logement.scss";
-    @use "./pages/4_about/about.scss";
+    @use "./pages/2_Logement_page/logementPage.scss";
+    @use "./pages/3_about_page/aboutPage.scss";
+    @use "./pages/4_error_page/errorPage.scss";
