@@ -1,22 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import HomePage from "./pages/1_home_page/HomePage.jsx";
+import HomePage from "./pages/1-home-page/HomePage.jsx";
 import Header from "./layout/header/Header.jsx";
-import Main_content from "./layout/main_content/Main_content.jsx";
-import LogementPage from "./pages/2_Logement_page/LogementPage.jsx";
-import About from "./pages/3_about_page/AboutPage.jsx";
+import MainContent from "./layout/main-content/MainContent.jsx";
+import LogementPage from "./pages/2-Logement-page/LogementPage.jsx";
+import About from "./pages/3-about-page/AboutPage.jsx";
 import Footer from "./layout/footer/Footer.jsx";
-import ErrorPageNotFound from "./pages/4_error_page/ErrorPage.jsx";
+import ErrorPage from "./pages/4-error-page/ErrorPage.jsx";
 import "./main.scss";
 
 const LayoutHeaderFooter = () => {
   return (
     <>
       <Header />
-      <Main_content>
+      <MainContent>
         <Outlet />
-      </Main_content>
+      </MainContent>
       <Footer />
     </>
   );
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   {
     element: <LayoutHeaderFooter />,
     errorElement: (
-      <ErrorPageNotFound />
+      <ErrorPage />
     ) /* ========== Page : Erreur 404 ========== */,
     children: [
       {

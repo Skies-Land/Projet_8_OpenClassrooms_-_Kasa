@@ -1,6 +1,6 @@
 import Footer from '../../layout/footer/Footer';
 import Header from '../../layout/header/Header';
-import Main_content from '../../layout/main_content/Main_content';
+import Main_content from '../../layout/main-content/MainContent';
 import { Link } from "react-router-dom";
 
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LogementCard from "../logement_card/LogementCard.jsx";
+import LogementCard from "../logement-card/LogementCard.jsx";
 
 function LogementGallery() {
   const [logements, setLogements] = useState([]);
@@ -18,8 +18,8 @@ function LogementGallery() {
 
   return (
     <div className="logement-gallery">
-      {logements.map((logement) => (
-        <LogementCard title={logement.title} imageUrl={logement.cover} id={logement.id} />
+      {logements.map((logement, logementCard) => (
+        <LogementCard title={logement.title} key={logementCard} imageUrl={logement.cover} id={logement.id} />
       ))}
     </div>
   );

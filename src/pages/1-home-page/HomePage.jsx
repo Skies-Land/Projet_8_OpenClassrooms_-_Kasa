@@ -1,6 +1,6 @@
-import BannerHome from "../../layout/banner_home/BannerHome.jsx";
-import Gallery from "../../components/logement_gallery/LogementGallery.jsx";
-import Logement from "../2_Logement_page/LogementPage.jsx";
+import BannerHome from "../../layout/banner-home/BannerHome.jsx";
+import Gallery from "../../components/logement-gallery/LogementGallery.jsx";
+import Logement from "../2-Logement-page/LogementPage.jsx";
 
 function HomePage() {
   return (
