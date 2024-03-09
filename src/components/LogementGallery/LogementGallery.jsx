@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LogementCard from "../logement-card/LogementCard.jsx";
+import LogementCard from "../LogementCard/LogementCard.jsx";
 
 function LogementGallery() {
   const [logements, setLogements] = useState([]);

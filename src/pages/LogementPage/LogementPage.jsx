@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Carousel from "../../components/carousel/Carousel.jsx";
-import Tags from "../../components/tags/Tags.jsx";
-import Rating from "../../components/rating/Rating.jsx";
-import Collapse from "../../components/collapse/Collapse.jsx";
+import Carousel from "../../components/Carousel/Carousel.jsx";
+import Tags from "../../components/Tags/Tags.jsx";
+import Rating from "../../components/Rating/Rating.jsx";
+import Collapse from "../../components/Collapse/Collapse.jsx";
 
 function LogementPage() {
     const location = useLocation();

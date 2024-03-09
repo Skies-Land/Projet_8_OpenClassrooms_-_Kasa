@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import HomePage from "./pages/1-home-page/HomePage.jsx";
-import Header from "./layout/header/Header.jsx";
-import MainContent from "./layout/main-content/MainContent.jsx";
-import LogementPage from "./pages/2-Logement-page/LogementPage.jsx";
-import About from "./pages/3-about-page/AboutPage.jsx";
-import Footer from "./layout/footer/Footer.jsx";
-import ErrorPage from "./pages/4-error-page/ErrorPage.jsx";
+import HomePage from "./pages/HomePage/HomePage.jsx";
+import Header from "./layout/Header/Header.jsx";
+import MainContent from "./layout/MainContent/MainContent.jsx";
+import LogementPage from "./pages/LogementPage/LogementPage.jsx";
+import About from "./pages/AboutPage/AboutPage.jsx";
+import Footer from "./layout/Footer/Footer.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 import "./main.scss";
 
 const LayoutHeaderFooter = () => {
@@ -25,9 +25,7 @@ const LayoutHeaderFooter = () => {
 const router = createBrowserRouter([
   {
     element: <LayoutHeaderFooter />,
-    errorElement: (
-      <ErrorPage />
-    ) /* ========== Page : Erreur 404 ========== */,
+    errorElement: <ErrorPage /> /* ========== Page : Erreur 404 ========== */,
     children: [
       {
         /* ========== Page : Accueil ========== */

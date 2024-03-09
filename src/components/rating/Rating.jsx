@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import starActiveImg from "../../assets/image/star_active.svg";
-import starInactiveImg from "../../assets/image/star_inactive.svg";
+import starActiveSvg from "../../assets/image/starActive.svg";
+import starInactiveSvg from "../../assets/image/starInactive.svg";
 
 const Rating = ({rating}) => {
     const fullRating = 5;
@@ -9,11 +9,11 @@ const Rating = ({rating}) => {
     let starInactive = [];
 
     for (let index = 0; index < rating; index++) {
-        starActive.push(<img className="starActive" key={`active-${index}`} src={starActiveImg} alt="Star  Active" />);
+        starActive.push(<img className="starActive" key={`active-${index}`} src={starActiveSvg} alt="Star  Active" />);
     }
 
     for (let index = 0; index < (fullRating - rating); index++) {
-        starInactive.push(<img className="starInactive" key={`inactive-${index}`} src={starInactiveImg} alt="Star Inactive" />);
+        starInactive.push(<img className="starInactive" key={`inactive-${index}`} src={starInactiveSvg} alt="Star Inactive" />);
     }
 
     return (

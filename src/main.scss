@@ -4,20 +4,20 @@
     @use "./utils/variables.scss";
 
 /*=============== IMPORT COMPONENTS ===============*/
-    @use "./components/carousel/carousel.scss";
-    @use "./components/collapse/collapse.scss";
-    @use "./components/logement-card/logementCard.scss";
-    @use "./components/logement-gallery/logementGallery.scss";
-    @use "./components/rating/rating.scss";
-    @use "./components/tags/tags.scss";
+    @use "./components/Carousel/carousel.scss";
+    @use "./components/Collapse/collapse.scss";
+    @use "./components/LogementCard/logementCard.scss";
+    @use "./components/LogementGallery/logementGallery.scss";
+    @use "./components/Rating/rating.scss";
+    @use "./components/Tags/tags.scss";
 
 /*=============== IMPORT LAYOUT ===============*/
-    @use "./layout/banner-home/bannerhome.scss";
-    @use "./layout/footer/footer.scss";
-    @use "./layout/header/header.scss";
-    @use "./layout/main-content/maincontent.scss";
+    @use "./layout/BannerHome/bannerhome.scss";
+    @use "./layout/Footer/footer.scss";
+    @use "./layout/Header/header.scss";
+    @use "./layout/MainContent/maincontent.scss";
 
 /*=============== IMPORT PAGES ===============*/
-    @use "./pages/2-Logement-page/logementPage.scss";
-    @use "./pages/3-about-page/aboutPage.scss";
-    @use "./pages/4-error-page/errorPage.scss";
+    @use "./pages/AboutPage/aboutPage.scss";
+    @use "./pages/ErrorPage/errorPage.scss";
+    @use "./pages/LogementPage/logementPage.scss";

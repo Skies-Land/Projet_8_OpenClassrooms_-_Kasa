@@ -1,12 +1,12 @@
-import BannerHome from "../../layout/banner-home/BannerHome.jsx";
-import Gallery from "../../components/logement-gallery/LogementGallery.jsx";
-import Logement from "../2-Logement-page/LogementPage.jsx";
+import BannerHome from "../../layout/BannerHome/BannerHome.jsx";
+import Gallery from "../../components/LogementGallery/LogementGallery.jsx";
+import LogementPage from "../../pages/LogementPage/LogementPage.jsx";
 
 function HomePage() {
   return (
     <>
       <BannerHome />
-      <Gallery path="logement/:id" element={<Logement />} />
+      <Gallery path="logement/:id" element={<LogementPage />} />
     </>
   );
 }

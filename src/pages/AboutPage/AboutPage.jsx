@@ -1,5 +1,5 @@
-import BannerAbout from "../../layout/banner-about/BannerAbout";
-import Collapse from "../../components/collapse/Collapse";
+import BannerAbout from "../../layout/BannerAbout/BannerAbout.jsx";
+import Collapse from "../../components/Collapse/Collapse.jsx";
 import aboutJson from "../../../public/about.json";
 
 const AboutPage = () => {
