@@ -1,17 +1,24 @@
 @import '../../utils/variables.scss';
 
 .logement-gallery {
-    //border: 3px solid red;
+    // border: 3px solid red;
     min-height: 50vh;
     border-radius: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 3em 0;
+    padding: 2.7em;
+    gap: 2em;
+
     @media screen and (max-width: 768px) {
-        justify-content: center;
-        background-color: inherit; /* Suppression de la couleur d'arrière-plan */
+        grid-template-columns: 1fr;
+        justify-items: center;
         padding: 0;
+        background-color: inherit; /* Suppression de la couleur d'arrière-plan */
+        > * { /* Sélectionne tous les enfants directs */
+            width: 100%; /* Largeur de l'élément enfant */
+        }
     }
 }

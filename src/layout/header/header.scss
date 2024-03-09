@@ -10,7 +10,8 @@ header {
     align-items: flex-end;
     padding-top: 0.93rem;
     padding-bottom: 1.25rem;
-
+    padding-left: 1em;
+    padding-right: 1em;
     img {
         @media screen and (max-width: 768px) {
             width: 7.5rem;
@@ -22,6 +23,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 1.2em;
         padding: 0;
         @media screen and (max-width: 1024px) {
             justify-content: space-around;
