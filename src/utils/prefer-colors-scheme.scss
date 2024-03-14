@@ -26,6 +26,9 @@
         .error-page a {
             color: black;
         }
+        .paragraph {
+            background-color: $Background-color;
+        }
     }
 
 /*========== 🌙 DARK MOD 🌙 ==========*/
@@ -39,8 +42,8 @@
         .navbar__links a {
             color: white;
         }
-        .logement-gallery {
-            background-color: #424242;
+        .logement-gallery, .paragraph {
+            background-color: #4b4f536a;
         }
         .banner, .logement__carousel--slider, .tags,
         .logement__description__top--host-block--host img {
