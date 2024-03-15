@@ -37,3 +37,5 @@ Mise à jour des packages npm du projet.
 - Mettre en œuvre des animations CSS
 - Développer une interface web avec Sass
 - Initialiser une application avec Create React App
+
+![preview](https://github.com/Skies-Land/Projet_8_OpenClassrooms_-_Kasa/assets/146822518/c0a2777d-d13d-4f12-81b9-65a3b994deb3)
