@@ -12,13 +12,18 @@
     padding: 2.7em;
     gap: 2em;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         grid-template-columns: 1fr;
         justify-items: center;
-        padding: 0;
+        padding: 1rem;
+        margin-top: 1rem;
         background-color: inherit; /* Suppression de la couleur d'arrière-plan */
         > * { /* Sélectionne tous les enfants directs */
-            width: 100%; /* Largeur de l'élément enfant */
+             width: 100%; /* Largeur de l'élément enfant */
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1;
     }
 }

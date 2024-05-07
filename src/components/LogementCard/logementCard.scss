@@ -9,6 +9,7 @@
     margin-top: 1.2em;
     margin-bottom: 0.2em;
     @media screen and (min-width: 1024px) {
+        margin-top: 0.5rem;
         transition: transform 250ms ease-in-out;
         transform: perspective(1px) translateZ(0);
         transition-duration: 0.3s;
@@ -18,10 +19,6 @@
             border-radius: 4rem;
             transform: scale(1.04) rotate(2deg);
         }
-        
-    }
-    @media screen and (max-width: 768px) {
-        flex-basis: 100%;
     }
 
     img {
