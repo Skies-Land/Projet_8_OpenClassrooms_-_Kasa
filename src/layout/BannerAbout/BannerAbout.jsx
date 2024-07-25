@@ -1,3 +1,5 @@
+import ImgBannerAbout from '../../assets/image/banner2.png';
+
 /** EXPLICATION DU COMPOSANT "BannerAbout" :
 * C'est un composant qui affiche une bannière dans la page à propos.
 * 
@@ -14,7 +16,7 @@ function BannerAbout() {
     return (
         <div className="banner">
 
-            <img src="src\assets\image\banner2.png" alt="Bannière d'accueil" className="banner__img" />
+            <img src={ImgBannerAbout} alt="Bannière d'accueil" className="banner__img" />
 
             <div className="banner__background"></div>
 

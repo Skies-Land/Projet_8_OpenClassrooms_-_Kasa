@@ -1,3 +1,5 @@
+import ImgBannerHome from '../../assets/image/banner.png';
+
 /** EXPLICATION DU COMPOSANT "BannerHome" :
 * C'est un composant qui affiche une bannière sur la page d'accueil.
 * 
@@ -14,7 +16,7 @@ function BannerHome() {
   return (
     <div className="banner">
 
-        <img src="src\assets\image\banner.png" alt="Bannière d'accueil" className="banner__img" />
+        <img src={ImgBannerHome} alt="Bannière d'accueil" className="banner__img" />
 
         <div className="banner__background"></div>
 

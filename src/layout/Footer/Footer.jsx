@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import LogoFooter from "../../assets/image/logo_footer.svg";
 
 /** EXPLICATION DU COMPOSANT "Footer" :
 * C'est un composant qui affiche le pied de page du site.
@@ -17,7 +18,7 @@ function Footer() {
     <div className="footer">
 
         <NavLink to={`/`}>
-          <img src="src\assets\image\logo_footer.svg" alt="Logo de Kasa" className="footer__img" />
+          <img src={LogoFooter} alt="Logo de Kasa" className="footer__img" />
         </NavLink>
 
         <div className="footer__text">

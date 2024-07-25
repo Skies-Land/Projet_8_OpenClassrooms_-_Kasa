@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/image/logo.svg";
 
 /** EXPLICATION DU COMPOSANT "Header" :
 * C'est un composant qui affiche l'en-tête du site.
@@ -18,7 +19,7 @@ function Header() {
     return (
         <header>
             <NavLink to={`/`}>
-                <img src="src\assets\image\logo.svg" alt="Logo de Kasa" />
+                <img src={Logo} alt="Logo de Kasa" />
             </NavLink>
 
             <nav className="navbar__links">
